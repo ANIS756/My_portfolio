@@ -97,8 +97,8 @@
             <a href="#blog" class="nav-item nav-link">Blog</a>
             <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
             <a href="#contact" class="nav-item nav-link">Contact</a>
-            <a href="{{'login'}}" class="nav-item nav-link">Login</a>
-            <a href="{{'register'}}" class="nav-item nav-link">Register</a>
+            <a href="{{route('login')}}" class="nav-item nav-link">Login</a>
+            <a href="{{route('register')}}" class="nav-item nav-link">Register</a>
         </div>
     </div>
 </nav>

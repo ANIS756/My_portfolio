@@ -8,11 +8,7 @@ use App\Http\Controllers\BlogController;
 
 Route::get('/',[FrontController::class,'index'])->name('landing');
 
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified'
-])->group(function () {
+Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
 
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
