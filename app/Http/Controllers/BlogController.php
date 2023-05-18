@@ -36,6 +36,15 @@ class BlogController extends Controller
         Blog::updateBlog($request, $id);
         return redirect()->route('manage-blog')->with('success',"Successfully Updated");
     }
+    public function delete($id){
+        $this->blog =Blog::find($id);
+        if (file_exists($this->blog->image)){
+            unlink($this->blog->image);
+        }
+        $this->blog->delete();
+        return redirect()->route('manage-blog')->with('success','Successfully Deleted');
+
+    }
 
 
 }

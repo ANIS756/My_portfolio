@@ -12,6 +12,7 @@
                                 <h3 class="text-center text-light">Manage Blog</h3>
                             </div>
                             <div class="card-body">
+                                <span class="text-success">{{ Session::has('success') ? Session::get('success'): ' ' }}</span>
                                 <table class="table">
                                     <thead>
                                     <tr>
@@ -40,7 +41,7 @@
                                             <td>{{ $blog->status == 1 ? 'Published' : 'Unpublished' }}</td>
                                             <td>
                                                 <a href="{{route('edit-blog' , ['id'=>$blog->id])}}" class="btn btn-warning">edit</a>
-                                                <a href="" class="btn btn-danger">delete</a>
+                                                <a href="{{route('delete-blog' , ['id'=>$blog->id])}}" class="btn btn-danger">delete</a>
                                             </td>
                                         </tr>
                                     @endforeach

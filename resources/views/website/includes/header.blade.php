@@ -1,6 +1,4 @@
 
-
-
 <!-- Spinner Start -->
 <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
     <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -8,72 +6,6 @@
     </div>
 </div>
 <!-- Spinner End -->
-
-
-{{--<header class="topbar fixed-top">--}}
-{{--    <div class="container">--}}
-{{--        <div class="row align-items-center">--}}
-{{--            <div class="col-lg-4 col-md-4 col-12">--}}
-{{--                <div class="top-left">--}}
-{{--                    <ul class="menu-top-link">--}}
-{{--                        <li>--}}
-{{--                            <div class="select-position">--}}
-{{--                                <select id="select4">--}}
-{{--                                    <option value="0" selected>$ USD</option>--}}
-{{--                                    <option value="1">€ EURO</option>--}}
-{{--                                    <option value="2">$ CAD</option>--}}
-{{--                                    <option value="3">₹ INR</option>--}}
-{{--                                    <option value="4">¥ CNY</option>--}}
-{{--                                    <option value="5">৳ BDT</option>--}}
-{{--                                </select>--}}
-{{--                            </div>--}}
-{{--                        </li>--}}
-{{--                        <li>--}}
-{{--                            <div class="select-position">--}}
-{{--                                <select id="select5">--}}
-{{--                                    <option value="0" selected>English</option>--}}
-{{--                                    <option value="1">Español</option>--}}
-{{--                                    <option value="2">Filipino</option>--}}
-{{--                                    <option value="3">Français</option>--}}
-{{--                                    <option value="4">العربية</option>--}}
-{{--                                    <option value="5">हिन्दी</option>--}}
-{{--                                    <option value="6">বাংলা</option>--}}
-{{--                                </select>--}}
-{{--                            </div>--}}
-{{--                        </li>--}}
-{{--                    </ul>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-lg-4 col-md-4 col-12">--}}
-{{--                <div class="top-middle">--}}
-{{--                    <ul class="useful-links">--}}
-{{--                        <li><a href="index.html">Home</a></li>--}}
-{{--                        <li><a href="about-us.html">About Us</a></li>--}}
-{{--                        <li><a href="contact.html">Contact Us</a></li>--}}
-{{--                    </ul>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-lg-4 col-md-4 col-12">--}}
-{{--                <div class="top-end">--}}
-{{--                    <div class="user">--}}
-{{--                        <i class="lni lni-user"></i>--}}
-{{--                        Hello--}}
-{{--                    </div>--}}
-{{--                    <ul class="user-login">--}}
-{{--                        <li>--}}
-{{--                            <a href="login.html">Sign In</a>--}}
-{{--                        </li>--}}
-{{--                        <li>--}}
-{{--                            <a href="register.html">Register</a>--}}
-{{--                        </li>--}}
-{{--                    </ul>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</header>--}}
-
-
 
 <!-- Navbar Start -->
 
@@ -117,6 +49,12 @@
                 <h1 class="display-3 mb-3">Md Anis Mojumder</h1>
                 <h2 class="typed-text-output d-inline"></h2>
                 <div class="typed-text d-none">Full Stack Web Developer, Software Engineer, Graphic Designer </div>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-square btn-primary me-2" target="_blank" href="https://twitter.com/mojumder_anis"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-primary me-2" target="_blank" href="https://www.facebook.com/anismaju/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-primary me-2" target="_blank" href="https://www.youtube.com/channel/UC8Ajd6iUYtLxGMFC2hnrulA"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-square btn-primary me-2" target="_blank" href="https://www.linkedin.com/in/anis-mojumder/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
                 <div class="d-flex align-items-center pt-5">
                     <a href="" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
                     <button type="button" class="btn-play" data-bs-toggle="modal"

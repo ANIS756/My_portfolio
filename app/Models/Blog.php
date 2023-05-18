@@ -38,7 +38,7 @@ class Blog extends Model
     public static function updateBlog($request,  $id){
 
         self::$blog                      = blog::find($id);
-        self::$imageFile = $request->File('image');
+        self::$imageFile                 = $request->File('image');
 
         if (self::$imageFile)
         {

@@ -17,16 +17,25 @@
 <div id="layout-wrapper">
 
 @include('admin.includes.header')
-@include('admin.includes.menu')
 
-
-
+    <div class="vertical-menu">
+        <div data-simplebar class="h-100">
+            @include('admin.includes.menu')
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="page-content">
+            <div class="container-fluid">
+                @yield('body')
+            </div>
+            <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
 </div>
 <!-- END layout-wrapper -->
-@yield('body')
+</div>
 @include('admin.includes.js')
 </body>
 
 
-<!-- Mirrored from themesbrand.com/skote/layouts/vertical/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Sep 2020 15:07:20 GMT -->
 </html>
