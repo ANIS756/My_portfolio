@@ -5,11 +5,14 @@ use App\Http\Controllers\FrontController;
 use App\Http\Controllers\DashBoardController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\ContactController;
 
 
 Route::get('/',[FrontController::class,'index'])->name('landing');
 
 Route::get('/download/{filename}', [FrontController::class,'download'])->name('download');
+
+Route::post('/contact', [ContactController::class,'contactme'])->name('contact');
 
 
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
