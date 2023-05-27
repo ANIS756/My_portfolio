@@ -6,13 +6,16 @@ use App\Http\Controllers\DashBoardController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ContactController;
+use Spatie\Honeypot\ProtectAgainstSpam;
 
 
 Route::get('/',[FrontController::class,'index'])->name('landing');
 
 Route::get('/download/{filename}', [FrontController::class,'download'])->name('download');
 
-Route::post('/contact', [ContactController::class,'contactme'])->name('contact');
+Route::post('/contact', [ContactController::class,'contactme'])->name('contact')->middleware(ProtectAgainstSpam::class);
+
+
 
 
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
@@ -38,5 +41,6 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
     Route::get('/edit-service/{id}', [ServiceController::class, 'edit'])->name('edit.service');
     Route::post('/update-service/{id}', [ServiceController::class, 'update'])->name('update.service');
     Route::get('/delete-service/{id}', [ServiceController::class, 'delete'])->name('delete.service');
+
 
 });

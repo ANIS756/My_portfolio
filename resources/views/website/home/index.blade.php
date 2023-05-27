@@ -566,6 +566,7 @@
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <form action="{{route('contact')}}" method="post">
                         @csrf
+                        @honeypot
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
