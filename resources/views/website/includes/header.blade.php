@@ -18,9 +18,10 @@
     </button>
     <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
         <div class="navbar-nav mx-auto py-0">
-            <a href="{{route('landing')}}" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
-                <h1 class="text-primary fw-bold m-0">ProMan</h1>
-            </a>
+            <div>
+                <a href="{{route('landing')}}" class="navbar-brand aimg d-none d-lg-block" style=" font-size: 24px">
+                    <img src="{{asset('/')}}website/img/logo.png" class="logoimg" style="height: 60px; float: left; margin-right: 7px" alt="logo">
+                </a></div>
             <a href="#home" class="nav-item nav-link active">Home</a>
             <a href="#about" class="nav-item nav-link">About</a>
             <a href="#skill" class="nav-item nav-link">Skills</a>
@@ -42,7 +43,7 @@
 
 
 <div class="container-fluid bg-light my-6 mt-6" id="home">
-    <div class="container">
+    <div class="container col-lg-12">
         <div class="row g-5 align-items-center">
             <div class="col-lg-7 py-6 pb-0 pt-lg-0">
                 <h3 class="text-primary mb-3">I'm</h3>
@@ -56,7 +57,7 @@
                     <a class="btn btn-square btn-primary me-2" target="_blank" href="https://www.linkedin.com/in/anis-mojumder/"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <div class="d-flex align-items-center pt-5">
-                    <a href="" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
+                    <a href="{{ route('download', ['filename' => 'CV-Md Anis Mojumder.pdf']) }}" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
                     <button type="button" class="btn-play" data-bs-toggle="modal"
                             data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
                         <span></span>

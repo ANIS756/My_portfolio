@@ -9,6 +9,9 @@ use App\Http\Controllers\ServiceController;
 
 Route::get('/',[FrontController::class,'index'])->name('landing');
 
+Route::get('/download/{filename}', [FrontController::class,'download'])->name('download');
+
+
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
 
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');

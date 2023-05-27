@@ -18,7 +18,7 @@
                                 <div class="row mt-3">
                                     <label class="col-md-4"> Service Name</label>
                                     <div class="col-md-8">
-                                        <input type="text" name="name" value="{{$service->id}}" class="form-control">
+                                        <input type="text" name="name" value="{{$service->name}}" class="form-control">
                                     </div>
                                 </div>
                                 <div class="row mt-3">
